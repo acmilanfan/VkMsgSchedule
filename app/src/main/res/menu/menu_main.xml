@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.acmilanfan.vkmsgschedule.MainActivity">
+
+    <item
+        android:enabled="true"
+        android:id="@+id/start_menu"
+        android:onClick="onStartMenu"
+        android:title="@string/start_menu"
+        android:orderInCategory="0"
+        app:showAsAction="never" />
+    <item
+        android:enabled="true"
+        android:id="@+id/stop_menu"
+        android:onClick="onStopMenu"
+        android:title="@string/stop_menu"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+    <item
+        android:enabled="true"
+        android:id="@+id/restart_nemu"
+        android:onClick="onRestartMenu"
+        android:title="@string/restart_menu"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+    <item
+        android:enabled="true"
+        android:id="@+id/settings_menu"
+        android:title="@string/settings_menu"
+        android:orderInCategory="3"
+        android:onClick="onSettingsMenu"
+        app:showAsAction="never" />
+
+    <item
+        android:enabled="true"
+        android:id="@+id/about_menu"
+        android:onClick="onAboutMenu"
+        android:title="@string/about"
+        android:orderInCategory="4"
+        app:showAsAction="never" />
+</menu>

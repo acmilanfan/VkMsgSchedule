@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/msgSrv">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/current_settings_label"
+        android:id="@+id/curSettingsLabel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/user_id_label"
+        android:id="@+id/userIdLabel"
+        android:layout_below="@+id/curSettingsLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/schedule_period_label"
+        android:id="@+id/schedulePeriodLabel"
+        android:layout_below="@+id/userIdLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/is_online_label"
+        android:id="@+id/isOnlineLabel"
+        android:layout_below="@+id/schedulePeriodLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/is_unread_msg"
+        android:id="@+id/isUnreadMsgLabel"
+        android:layout_below="@+id/isOnlineLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/load_msg_num"
+        android:id="@+id/loadMsgNumLabel"
+        android:layout_below="@+id/isUnreadMsgLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/msg_type_label"
+        android:id="@+id/msgTypeLabel"
+        android:layout_below="@+id/loadMsgNumLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/msg_text_label"
+        android:id="@+id/msgTextLabel"
+        android:layout_below="@+id/msgType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/userId"
+        android:layout_below="@+id/curSettingsLabel"
+        android:layout_toRightOf="@id/userIdLabel"
+        android:layout_toEndOf="@id/userIdLabel"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/schedulePeriod"
+        android:layout_below="@id/userId"
+        android:layout_toRightOf="@id/schedulePeriodLabel"
+        android:layout_toEndOf="@id/schedulePeriodLabel"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/isOnline"
+        android:layout_below="@id/schedulePeriod"
+        android:layout_toRightOf="@id/isOnlineLabel"
+        android:layout_toEndOf="@id/isOnlineLabel"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/isUnreadMsg"
+        android:layout_below="@id/isOnline"
+        android:layout_toRightOf="@id/isUnreadMsgLabel"
+        android:layout_toEndOf="@id/isUnreadMsgLabel"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/loadMsgNum"
+        android:layout_below="@id/isUnreadMsg"
+        android:layout_toRightOf="@id/loadMsgNumLabel"
+        android:layout_toEndOf="@id/loadMsgNumLabel"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/msgType"
+        android:layout_below="@id/loadMsgNum"
+        android:layout_toRightOf="@id/msgTypeLabel"
+        android:layout_toEndOf="@id/msgTypeLabel"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/msgText"
+        android:layout_below="@+id/msgType"
+        android:layout_toRightOf="@id/msgTextLabel"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startServiceBtn"
+        android:text="@string/btn_start_service"
+        android:onClick="onClickStart"
+        android:layout_below="@id/msgText"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_stop_service"
+        android:id="@+id/stopServiceBtn"
+        android:onClick="onClickStop"
+        android:layout_below="@id/startServiceBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_restart"
+        android:id="@+id/btn_restart"
+        android:onClick="onClickRestart"
+        android:layout_below="@+id/stopServiceBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_settings"
+        android:id="@+id/btn_settings"
+        android:onClick="onSettingsBtn"
+        android:layout_below="@+id/btn_restart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
